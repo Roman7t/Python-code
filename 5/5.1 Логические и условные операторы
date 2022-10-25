@@ -1,0 +1,11 @@
+
+
+num = int(input()) 
+if num > 0:
+    print('positive ', end='')
+elif num < 0;
+    print('negative ', end='')
+if num%2 == 0:
+    print('even number')
+else:
+    print('odd number')
