@@ -1,0 +1,48 @@
+Код Тру Фолс
+
+a = int(input())
+b = int(input())
+
+if a < b:
+    print("YES")
+else:
+    print("NO")
+
+
+a = int(input())
+b = int(input())
+
+if a < b:
+    print("less")
+else:
+    if a==b:
+       print("equal")
+    else:
+        print("greater")
+
+a = int(input())
+b = int(input())
+
+if a <= b:
+     print(1)
+elif a<=4:
+     print(2)
+else:
+    print(3)
+
+Кола в магазине
+cash = int(input())
+cost = int(input())
+cassa = int(input())
+if cash >= cost and (cash - cost) <= cassa:
+    print("Колла наша")
+else:
+    print("Не судьба")
+
+Купить Мак Бук !
+cash = int(input())
+mac = int(input())
+
+if not cash >= mac:
+
+    print("сорян")
