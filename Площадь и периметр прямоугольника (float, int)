@@ -1,0 +1,13 @@
+def perimeter(a, b):
+    return (a + b) * 2
+
+
+def area(a, b):
+    return a * b
+
+
+a = int(input('First side: '))
+b = int(input('Second side: '))
+
+print(f'Периметр = {perimeter(a, b)}')
+print(f'Площадь = {area(a, b)}')
