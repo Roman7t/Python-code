@@ -1,0 +1,18 @@
+number = int(input())
+units = number % 10
+dozens = number % 100 // 10
+hundreds = number % 1000 // 100
+thousands = number % 10000 // 1000
+doz_of_thous = number // 10000
+print((dozens ** units) * hundreds / (doz_of_thous - thousands))
+
+
+# или второй способ 
+
+number = input()
+units = int(number[-1])
+dozens = int(number[-2])
+hundreds = int(number[-3])
+thousands = int(number[-4])
+doz_of_thous = int(number[-5])
+print((dozens ** units) * hundreds / (doz_of_thous - thousands))
