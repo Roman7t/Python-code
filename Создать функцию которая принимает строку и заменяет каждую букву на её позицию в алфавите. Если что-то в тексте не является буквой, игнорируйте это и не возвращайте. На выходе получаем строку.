@@ -1,0 +1,17 @@
+import string
+
+
+def str_to_int(s: str = ''):
+    if not s:
+        return 'входная строка пустая'
+    alphabet = list(string.ascii_lowercase)
+    position_in_alphabet = [str(i + 1) for i in range(len(alphabet))]
+    dict_alphabet = dict(zip(alphabet, position_in_alphabet))
+    s_to_i = ''
+    for char in s.lower():
+        if char in dict_alphabet:
+            s_to_i += dict_alphabet.get(char) + ' '
+    return s_to_i
+
+
+print(str_to_int('I learn Python with Python Nation!!!'))
