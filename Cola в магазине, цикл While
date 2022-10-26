@@ -1,10 +1,11 @@
 clients = int(input())
-cola = int(input()
+cola = int(input())
 cnt = 0
-           while (clients > 0 ) and (cola >= 0)
-                cans = int(input())
-                clients -= 1
-                if cola >= cans:
-                    cnt += 1
-                    cola -= cans
-           print(cnt)
+while (clients > 0) and (cola >= 0):
+    cans = int(input())
+    clients -= 1
+    if cola >= cans:
+        cnt += 1
+        cola -= cans
+
+print(cnt)
