@@ -1,0 +1,5 @@
+n = int(input())            #кол сотрудников
+for i in range (n):
+    salary = int(input())  #зарплата
+    if salary % 2 == 0:
+        print(i, +1, "fired")
