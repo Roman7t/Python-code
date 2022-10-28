@@ -1,0 +1,9 @@
+#Для того что бы стать профи в своем деле нужно 10 000 часов.
+
+profi = 10000
+day = 10
+result = profi/day
+yer = 365
+week = 8*5
+print (profi/(yer*day))
+print (int(profi/((week*4)*12)))
