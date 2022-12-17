@@ -1,0 +1,10 @@
+import turtle
+pen = turtle.Turtle()
+pen.home()
+# рисуем пятиугольник
+pen.circle(50, steps=5)
+pen.circle(75, steps=5)
+# рисуем шестиугольник
+pen.circle(100, steps=6)
+pen.circle(125, steps=7)
+pen.circle(150, steps=7)
