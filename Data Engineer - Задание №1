@@ -1,0 +1,5 @@
+  val w = Window.partitionBy("customer_id", "product_id")
+          .orderBy(desc("timestamp"), desc("action"))
+
+  df.withColumn("rn", row_number().over(w))
+          .where($"rn" === 1).drop("rn") show (false)
