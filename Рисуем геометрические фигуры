@@ -1,0 +1,29 @@
+import turtle
+
+turtlePen = turtle.Turtle()
+window = turtle.Screen()
+
+
+def draw_stairs(n, size=30):  # &lt;- создали функцию, для рисования
+    for i in range(0, n):  # &lt;- цикл нарисует указанное количество ступеней
+
+        def polygon(n, size=80):
+            if n > 2:  # &lt;- многоугольников меньше 3 углов я не знаю :)
+                angle = 360 / n  # &lt;- получаем угол поворота в зависимости от количества углов
+
+                for n in range(0, n):  # &lt;- рисуем стороны
+                    turtlePen.left(angle)
+                    turtlePen.forward(size)
+
+        # рисуем разные фигуры
+        polygon(3)
+        polygon(4)
+        polygon(5)
+        polygon(6)
+
+
+turtlePen.speed(10)
+
+draw_stairs(8)  # &lt;- вызов функции
+
+window.mainloop()
